@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class Slide : MonoBehaviour
 {
     public GameObject Slidebar,randomsong;
-    public GameObject[] song = new GameObject[20];
+    public GameObject[] song = new GameObject[10];
     public const int nsong = 6;
     double value;
     Scrollbar scrollbar;
     Dingshu dingshu;
     int num;
-    double[] slide = new double[300];
+    double[] slide = new double[1000];
     System.Random pick = new System.Random();
     public void Randompick()
     {
