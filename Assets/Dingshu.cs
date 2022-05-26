@@ -16,9 +16,9 @@ public class Dingshu : MonoBehaviour
         public int num;
         public AudioClip mp3;
     }
-    TextAsset nam, diff,rank;
-    string[] songname, songdiff,songrank=new string[1000];
     public Song[] song = new Song[1000];
+    TextAsset nam, diff,rank;
+    string[] songname, songdiff,songrank;
     public int num;
     // Start is called before the first frame update
     void Awake()

@@ -14,6 +14,7 @@ public class Slide : MonoBehaviour
     int num;
     double[] slide = new double[1000];
     System.Random pick = new System.Random();
+    public int nowsong=0;
     public void Randompick()
     {
         int random=pick.Next(1, num);
@@ -41,6 +42,7 @@ public class Slide : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow)) {scrollbar.value += 2*1.0f  / (num - nsong + 1); }
         if (Input.GetKeyDown(KeyCode.UpArrow)) { scrollbar.value -= 2 *1.0f/ (num - nsong + 1); }
         int ii = 0; while (value > slide[ii]&&ii<num-1) { ii++; }
+        nowsong = ii;
         for(int i = 0; i < nsong; i++)
         {
             song[i].transform.GetChild(1).GetComponent<Text>().text = dingshu.song[ii + i].name;

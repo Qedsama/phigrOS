@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Calculate : MonoBehaviour
 {
     public GameObject input, output,accinput;
+    public double biaoxian;
     InputField inputfield,acci;
     Text outputfield;
     Songnow songnow;
@@ -45,7 +46,7 @@ public class Calculate : MonoBehaviour
             lastname = nam;
         }
         double dingshu = songnow.dingshu;
-        double biaoxian = Calc(dingshu, acc);
+        biaoxian = Calc(dingshu, acc);
         Print(biaoxian);
     }
 }
