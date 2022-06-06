@@ -20,6 +20,10 @@ public class Client : MonoBehaviour
         string json = JsonUtility.ToJson(songnow);
         tcpClient.Send(Encoding.UTF8.GetBytes(json));
     }
+    public void initgetmessage()
+    {
+
+    }
     void Start()
     {
         //1¡¢´´½¨socket

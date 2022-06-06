@@ -38,8 +38,8 @@ public class Dingshu : MonoBehaviour
             song[i].compuser = "…–Œ¥µº»Î";
             song[i].rank = songrank[i];
             song[i].num = i;
-            song[i].painting = Resources.Load<Sprite>("P"+(i+1).ToString());
-            song[i].mp3 = Resources.Load<AudioClip>("M"+name);
+            song[i].painting = Resources.Load<Sprite>("P " + song[i].name);
+            print(song[i].name);
         }
     }
 }
